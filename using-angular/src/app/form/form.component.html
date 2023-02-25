@@ -1,0 +1,15 @@
+<h1 class="header">How Strong is Your Password?</h1>
+<div class="password-wrapper">
+    <input class="password-wrapper__input" type={{inputType}} name="password" [(ngModel)]="password"
+        (ngModelChange)="passwordHandler()" />
+    <div class="password-wrapper__visibility-switch" (click)="toggleVisibility()">
+        <img src={{visibilityPng}} alt="">
+    </div>
+</div>
+<div class="indicator-wrapper">
+    <div class="indicator">
+        <div class="bar" [ngClass]="indicators.leftBar"></div>
+        <div class="bar" [ngClass]="indicators.mediumBar"></div>
+        <div class="bar" [ngClass]="indicators.rightBar"></div>
+    </div>
+</div>
