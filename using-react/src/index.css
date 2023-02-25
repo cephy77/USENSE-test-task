@@ -1,0 +1,8 @@
+@import "variables.css";
+@import url("https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap");
+body {
+  font-family: "Rubik Mono One", sans-serif;
+  margin: 0;
+  height: 100vh;
+  background-color: var(--dark-color);
+}
